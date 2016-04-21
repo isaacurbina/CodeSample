@@ -94,7 +94,6 @@ public class FavoritesFragment extends Fragment {
     }
 
     public void refreshData() {
-        // TODO: 2/22/16 Refresh content with a Loader or SyncAdapter
         retrieveFavData();
         mAdapter = new FavoritesAdapter((FavoritesActivity) getActivity(), mCursor);
         mRecyclerView.setAdapter(mAdapter);
